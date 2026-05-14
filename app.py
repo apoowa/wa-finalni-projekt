@@ -8,17 +8,17 @@ movies = [
     {
         "id": 1,
         "title": "The Handmaiden",
-        "image": "images/thehandmaiden.jpg"
+        "image": "thehandmaiden.jpg"
     },
     {
         "id": 2,
         "title": "Bound",
-        "image": "images/bound.jpg"
+        "image": "bound.jpg"
     },
     {
         "id": 3,
         "title": "Redline",
-        "image": "images/redline.jpg"
+        "image": "redline.jpg"
     }
 ]
 
