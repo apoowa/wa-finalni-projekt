@@ -1,9 +1,8 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request, redirect, url_for
 
 app = Flask(__name__)
 
-
-# Testovací data filmů
+#filmy
 movies = [
     {
         "id": 1,
@@ -31,12 +30,41 @@ movies = [
     }
 ]
 
+#listky 
+ticket_types = ["Standard", "Student", "VIP"]
 
 @app.route("/")
 def home():
     return render_template("index.html", movies=movies)
 
+@app.route("/movie/<int:movie_id>")
+def movie_detail(movie_id):
+    movie = next((m for m in movies if m["id"] == movie_id), None)
+    if movie is None:
+        return render_template("404.html"), 404
+    return render_template("movie_detail.html", movie=movie)
 
+@app.route("/movie/<int:movie_id>/reservation", methods=["GET", "POST"])
+def reservation(movie_id):
+    movie = next((m for m in movies if m["id"] == movie_id), None)
+    if movie is None:
+        return render_template("404.html"), 404
+    
+    if request.method == "POST":
+        email = request.form.get("email")
+        ticket_type = request.form.get("ticket_type")
+        
+        # Simple validation
+        if not email or not ticket_type:
+            return "Please fill in all fields!", 400
+            
+        return render_template("reservation_success.html", movie=movie, email=email)
+    
+    return render_template("reservation_form.html", movie=movie, ticket_types=ticket_types)
+
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template("404.html"), 404
 
 if __name__ == "__main__":
     app.run(debug=True)
