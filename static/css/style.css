@@ -1,8 +1,51 @@
+
 body {
-    background-color: #f4f4f4;
+    background-color: #121214;
+    color: #e4e6eb;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.movie-card {
+    background-color: #1e1e24;
+    border: 1px solid #2a2a35;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.movie-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5) !important;
+}
+
+.movie-card .card-title {
+    color: #ffffff;
+    font-weight: 600;
 }
 
 .movie-card img {
     height: 400px;
     object-fit: cover;
+}
+
+form.bg-white, form.bg-light {
+    background-color: #1e1e24 !important;
+    color: #ffffff;
+    border: 1px solid #2a2a35 !important;
+}
+
+form .form-control, form .form-select {
+    background-color: #2a2a35;
+    border: 1px solid #3a3a4c;
+    color: #ffffff;
+}
+
+form .form-control:focus, form .form-select:focus {
+    background-color: #2a2a35;
+    color: #ffffff;
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+.border-dashed {
+    border-color: #3a3a4c !important;
+    background-color: #121214 !important;
 }
