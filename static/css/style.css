@@ -49,3 +49,20 @@ form .form-control:focus, form .form-select:focus {
     border-color: #3a3a4c !important;
     background-color: #121214 !important;
 }
+
+
+.lead.text-muted, .text-muted {
+    color: #b0b3b8 !important; 
+}
+
+h1, .display-4 {
+    color: #ffffff; 
+}
+
+p strong {
+    color: #ffffff; 
+}
+
+.col-md-8 {
+    padding-left: 2rem;
+}
