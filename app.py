@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request, redirect, url_for
 
+#flask aplikace 
 app = Flask(__name__)
 
 #filmy
@@ -54,20 +55,23 @@ def reservation(movie_id):
         return render_template("404.html"), 404
     
     if request.method == "POST":
+        #nacteni hodnot z formulare
         email = request.form.get("email")
         ticket_type = request.form.get("ticket_type")
         
         #overeni
         if not email or not ticket_type:
             return "Please fill in all fields!", 400
-            
+            #vykresleni stranky s potvrzenim rezervace
         return render_template("reservation_success.html", movie=movie, email=email)
     
     return render_template("reservation_form.html", movie=movie, ticket_types=ticket_types)
 
+#zachyceni chyby 404
 @app.errorhandler(404)
 def page_not_found(e):
     return render_template("404.html"), 404
 
+#spusteni vyvojarske serveru
 if __name__ == "__main__":
     app.run(debug=True)

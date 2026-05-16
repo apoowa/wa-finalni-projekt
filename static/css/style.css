@@ -1,68 +1,68 @@
-
+/* tmavy rezim*/
 body {
     background-color: #121214;
     color: #e4e6eb;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
+/* uprava karet*/
 .movie-card {
     background-color: #1e1e24;
     border: 1px solid #2a2a35;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-
+/* efekt pro karty*/
 .movie-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5) !important;
 }
-
+/* barva nadpisu*/
 .movie-card .card-title {
     color: #ffffff;
     font-weight: 600;
 }
-
+/* omezeni vysky*/
 .movie-card img {
     height: 400px;
     object-fit: cover;
 }
-
+/* citelnost textu*/
 form.bg-white, form.bg-light {
     background-color: #1e1e24 !important;
     color: #ffffff;
     border: 1px solid #2a2a35 !important;
 }
-
+ /* samostatna policka*/
 form .form-control, form .form-select {
     background-color: #2a2a35;
     border: 1px solid #3a3a4c;
     color: #ffffff;
 }
-
+/* zmena barvy pri focusu*/
 form .form-control:focus, form .form-select:focus {
     background-color: #2a2a35;
     color: #ffffff;
     border-color: #0d6efd;
     box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
 }
-
+/* prerusovany ramecek*/
 .border-dashed {
     border-color: #3a3a4c !important;
     background-color: #121214 !important;
 }
 
-
+/* citelnost textu2*/
 .lead.text-muted, .text-muted {
     color: #b0b3b8 !important; 
 }
-
+/*hlavni nadpisy*/
 h1, .display-4 {
     color: #ffffff; 
 }
-
+/*stitky*/
 p strong {
     color: #ffffff; 
 }
-
+/* odsazeni*/
 .col-md-8 {
     padding-left: 2rem;
 }
