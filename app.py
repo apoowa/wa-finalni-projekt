@@ -10,7 +10,8 @@ movies = [
         "image": "thehandmaiden.jpg",
         "description": "A woman is hired as a handmaid to a Japanese heiress, but secretly she is involved in a plot to defraud her.",
         "cast": "Kim Min-hee, Kim Tae-ri",
-        "director": "Park Chan-wook"
+        "director": "Park Chan-wook",
+        "runtime": "144 min"
     },
     {
         "id": 2,
@@ -18,7 +19,8 @@ movies = [
         "image": "bound.jpg",
         "description": "A tough female ex-con and her lover hatch a scheme to steal millions of stashed mob cash.",
         "cast": "Jennifer Tilly, Gina Gershon",
-        "director": "Lana & Lilly Wachowski"
+        "director": "Lana & Lilly Wachowski",
+        "runtime": "109 min"
     },
     {
         "id": 3,
@@ -26,7 +28,8 @@ movies = [
         "image": "redline.jpg",
         "description": "A story about the most dangerous car race in the galaxy and the deadly illegal underworld that runs it.",
         "cast": "Takuya Kimura, Yuu Aoi",
-        "director": "Takeshi Koike"
+        "director": "Takeshi Koike",
+        "runtime": "102 min"
     }
 ]
 
