@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="text-center mt-5">
+    <div class="alert alert-success p-5 shadow-sm border-0 rounded-4">
+        <h1 class="display-5 fw-bold">Reservation Successful!</h1>
+        <p class="lead mt-3">Confirmation for <strong>{{ movie.title }}</strong> has been sent to: <br><strong>{{ email }}</strong></p>
+        <hr class="my-4">
+        <p>Thank you for choosing our cinema!</p>
+        <a href="/" class="btn btn-primary px-5 py-2 mt-2">Home</a>
+    </div>
+</div>
+{% endblock %}

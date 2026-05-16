@@ -54,7 +54,7 @@ def reservation(movie_id):
         email = request.form.get("email")
         ticket_type = request.form.get("ticket_type")
         
-        # Simple validation
+        #overeni
         if not email or not ticket_type:
             return "Please fill in all fields!", 400
             
